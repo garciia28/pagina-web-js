@@ -1,0 +1,123 @@
+body {
+    background-color: #eef2b2;
+}
+
+#principio {
+    display: grid;
+    grid-template-areas:
+        'titulo titulo titulo  logo'
+        'foto2 texto texto texto'
+        'texto2 texto2 texto2  foto3'
+        'foto texto3  texto3  texto3'
+        'pie pie pie pie';
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 850px) {
+    #principio {
+        display: grid;
+        grid-template-areas:
+        'logo'
+        'titulo'
+        'texto'
+        'foto2'
+        'texto2'
+        'foto3'
+        'texto3'
+        'foto'
+        'pie';
+        grid-gap: 5px;
+        padding: 5px;
+        text-align: center;
+    }   
+}
+
+#contenedor {
+    display: grid;
+    grid-template-areas:
+        'info mapa derecha';
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 850px) {
+    #contenedor {
+        display: grid;
+        grid-template-areas:
+            'info'
+            'mapa'
+            'derecha';        
+        grid-gap: 5px;
+        padding: 5px;
+    }   
+}
+
+#info {
+    grid-area: info;
+    text-align: left;
+}
+
+#mapa {
+    grid-area: mapa;
+}
+
+#derecha {
+    grid-area: derecha;
+    text-align: right;
+}
+
+#web {
+    display: flex;
+}
+
+#derecha {
+    text-align: right;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#logo {
+    grid-area: logo;
+    text-align: right;
+}
+
+#titulo {
+    grid-area: titulo;
+}
+
+#foto {
+    grid-area: foto;
+}
+
+#texto {
+    grid-area: texto;
+}
+#pie {
+    grid-area: pie;
+}
+#texto2 {
+    grid-area: texto2;
+}
+#texto3 {
+    grid-area: texto3;
+}
+#foto2 {
+    grid-area: foto2;
+}
+#foto3 {
+    grid-area: foto3;   
+}
+
+button {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}

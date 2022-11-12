@@ -1,0 +1,28 @@
+body {
+    background-color: #c38fe9;
+}
+
+#principio {
+    display: grid;
+    grid-template-areas:
+        'titulo titulo titulo titulo logo';
+}
+
+h1 {
+    text-align: center;
+}
+
+#logo {
+    grid-area: logo;
+    text-align: right;
+}
+
+#titulo {
+    grid-area: titulo;
+    color: #154f16;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
